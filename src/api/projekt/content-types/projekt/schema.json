@@ -1,0 +1,78 @@
+{
+  "kind": "collectionType",
+  "collectionName": "projekts",
+  "info": {
+    "singularName": "projekt",
+    "pluralName": "projekts",
+    "displayName": "Projekt",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Titel": {
+      "type": "string",
+      "required": true
+    },
+    "Beschreibung": {
+      "type": "text",
+      "required": true
+    },
+    "Kunde": {
+      "type": "string",
+      "required": true
+    },
+    "HairMakeUp": {
+      "type": "string",
+      "required": true
+    },
+    "Assistent": {
+      "type": "string",
+      "required": true
+    },
+    "Bilder": {
+      "type": "media",
+      "multiple": true,
+      "required": true,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "positionOnLandingPage": {
+      "type": "integer",
+      "min": 0,
+      "unique": true,
+      "max": 20
+    },
+    "Titelbild": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "category": {
+      "type": "enumeration",
+      "enum": [
+        "portrait",
+        "corporate",
+        "interior",
+        "published"
+      ],
+      "required": true
+    },
+    "positionOnCategoryPage": {
+      "type": "integer",
+      "min": 0,
+      "required": false,
+      "default": 0
+    },
+    "fullscreen": {
+      "type": "boolean",
+      "default": false
+    }
+  }
+}
