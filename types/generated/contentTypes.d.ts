@@ -881,7 +881,7 @@ export interface ApiProjektProjekt extends Schema.CollectionType {
       >;
     Titelbild: Attribute.Media<'images'> & Attribute.Required;
     category: Attribute.Enumeration<
-      ['portrait', 'corporate', 'interior', 'published']
+      ['portrait', 'corporate', 'interior', 'jewellery']
     > &
       Attribute.Required;
     positionOnCategoryPage: Attribute.Integer &
